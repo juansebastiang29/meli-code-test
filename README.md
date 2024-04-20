@@ -20,6 +20,16 @@ Luego Ejecute el pipeline
 python pipeline.py
 ```
 
+## Step1: Procesamiento de datos - Dockerfile
+
+Para generar la matriz para el analisis desde el docker file:
+
+```
+docker build -t meli-de-test .
+docker run meli-de-test
+```
+
+
 ## Step 2:
 
 La descripcion del proceso y el analisis de las variables lo encuentra en el notebook `experiment`.
