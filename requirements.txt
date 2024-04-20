@@ -1,0 +1,8 @@
+swifter==1.4.0
+ray>=1.0.0
+pandas==2.2.2
+tqdm>=4.33.0
+ipywidgets>=7.0.0
+matplotlib
+seaborn
+scikit-learn
