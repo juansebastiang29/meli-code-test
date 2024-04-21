@@ -2,9 +2,13 @@ services:
   pipeline:
     build:
       context: .
-      shm_size: '4gb'
-    shm_size: '4gb'
+      shm_size: '12gb'
+    shm_size: '12gb'
     volumes:
-      - data:/app/src/data
+      - source: data
+        target: /app/src/data
+        type: bind
+        bind:
+            create_host_path: true
 volumes:
   data:

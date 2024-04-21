@@ -4,7 +4,7 @@
 
 <a href="https://www.linkedin.com/in/jsebastiangarcia29/">Linkedin Profile</a>
 
-## Step1: Procesamiento de datos
+## Step1 - Procesamiento de datos
 
 Para generar la matriz para el analisis en un ambiente conda:
 
@@ -20,15 +20,14 @@ Luego Ejecute el pipeline
 python pipeline.py
 ```
 
-## Step1: Procesamiento de datos - Dockerfile
+## Step1-  Procesamiento de datos - docker-compose
 
 Para generar la matriz para el analisis desde el docker file:
 
 ```
-docker build -t meli-de-test .
-docker run meli-de-test
+docker compose build
+docker compose up
 ```
-
 
 ## Step 2:
 
