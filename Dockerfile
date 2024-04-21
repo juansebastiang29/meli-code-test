@@ -14,4 +14,4 @@ RUN pip install --upgrade pip && \
 
 COPY . .
 
-CMD ["python", "pipline.py"]
+CMD ["python" ,"pipeline.py"]

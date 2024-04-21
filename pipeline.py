@@ -181,7 +181,7 @@ def get_joined_prints_report(prints_df: pd.DataFrame,
     check_df = df_join_1.loc[~df_join_1['click_user_value_prop'].isna()]
     assert (check_df['value_prop_prints']!=check_df['value_prop_taps']).sum()==0
 
-    df_join_1 = df_join_1['click_user_value_prop'].fillna(False)
+    df_join_1['click_user_value_prop'] = df_join_1['click_user_value_prop'].fillna(False)
 
     # JOINED TABLE prints report <> @payments_last_3_weeks
     df_join_2 = df_join_1.merge(payments_user_level_ts,

@@ -1,0 +1,10 @@
+services:
+  pipeline:
+    build:
+      context: .
+      shm_size: '4gb'
+    shm_size: '4gb'
+    volumes:
+      - data:/app/src/data
+volumes:
+  data:
